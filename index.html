@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+        <title>Virtual Restaurant</title>
+        <style>
+
+            #container{
+                width:60%;
+                margin:auto;
+            }
+
+            #checkbox-food{
+                margin:auto;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius:10px;
+                display: grid;
+                width:50%;
+                height:200px;
+                grid-template-columns:repeat(2,1fr);
+                margin-bottom:20px;
+            }
+
+            #checkbox-food{
+                display:flex;
+                justify-content:space-around;
+            }
+
+            #checkbox-food>h3{
+                text-align:center;
+                margin-top:70px;
+                font-size:28px;
+                font-family:Arial, Helvetica, sans-serif;
+                color:crimson
+            }
+            #btn{
+                text-align:center;
+            }
+            button{
+                width:180px;
+                height:40px;
+                border:1px solid pink;
+                border-radius:5px;
+                background-color:transparent;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                color:maroon;
+                font-size:20px;
+            }
+            button:hover{
+                background-color:maroon;
+                color:white;
+                cursor:pointer;
+                border:1px solid white;
+            }
+            #showImage{
+                width:50%;
+                margin:auto;
+                text-align:center;
+                margin-top:20px;
+                border-radius:5px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                padding:10px;
+            }
+            
+            p{
+                color:maroon;
+                font-size:20px;
+                text-align:right;
+            }
+            
+            label{
+                font-size:18px;
+            }
+            img{
+                border-radius:10px;
+                width:80%;
+                margin:auto;
+                height:200px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <center><h1>Order Your Food !</h1></center>
+            <div id="checkbox-food">
+                <h3>Select Dish : </h3>
+                <table id="menu">
+                    <tr>
+                        <td id="food-items">
+                            <input id="pizza" type="checkbox" value="pizza"><label for="pizza">Pizza</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="burger" type="checkbox" value="burger"><label for="burger">Burger</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="momos" type="checkbox" value="momos"><label for="momos">Momos</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="dosa" type="checkbox" value="dosa"><label for="dosa">Dosa</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="btn">
+                <button onclick="orderFood()">Order Food</button>
+            </div>
+            
+            <div id="showImage">
+            </div>
+        </div>
+    </body>
+    <script src='index.js'></script>
+</html>
